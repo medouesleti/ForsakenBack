@@ -10,6 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use('/games', gameRoutes);
 
+
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to MongoDB');
