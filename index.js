@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use('/games', gameRoutes);
 
 
-mongoose.connect("mongodb+srv://spotlolz223:lgbzuXGjrvytSXwP@forsaken.rj8y6.mongodb.net/?retryWrites=true&w=majority&appName=Forsaken", { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://spotlolz223:lgbzuXGjrvytSXwP@forsaken.rj8y6.mongodb.net/Forsaken", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Connected to MongoDB');
         createDefaultGame();
